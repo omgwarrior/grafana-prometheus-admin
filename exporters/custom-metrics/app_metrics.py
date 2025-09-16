@@ -6,7 +6,7 @@ import time
 REQUEST_TIME = Gauge('app_request_processing_seconds', 'Time spent processing request')
 
 def process_request():
-    """Simulate request processing time"""
+    # Simulate request processing time
     duration = random.uniform(0.1, 2.0)
     REQUEST_TIME.set(duration)
     time.sleep(duration)
@@ -14,7 +14,7 @@ def process_request():
 if __name__ == '__main__':
     # Start the Prometheus metrics server on port 8000
     start_http_server(8000)
-    print("Custom metrics exporter running on port 8000")
-    
+    print('Custom metrics exporter running on port 8000')
+
     while True:
         process_request()

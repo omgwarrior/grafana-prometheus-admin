@@ -26,4 +26,3 @@ services:
     container_name: node-exporter
     ports:
       - "9100:9100"
-
