@@ -10,3 +10,9 @@ This repository contains a complete setup for **Grafana** and **Prometheus** to 
 - Custom metrics example in Python
 
 ## Folder Structure
+grafana-prometheus-admin/
+│
+├── grafana/ # Dashboards & data sources
+├── prometheus/ # Prometheus configs & alerts
+├── exporters/ # Exporters and custom scripts
+└── scripts/ # Setup and deployment scripts
